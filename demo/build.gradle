@@ -2,12 +2,12 @@ apply plugin: 'com.android.application'
 
 android {
     namespace "net.opacapp.multilinecollapsingtoolbar.demo"
-    compileSdkVersion 27
+    compileSdkVersion 34
 
     defaultConfig {
         applicationId "net.opacapp.multilinecollapsingtoolbar.demo"
         minSdkVersion 14
-        targetSdkVersion 27
+        targetSdkVersion 34
         versionCode 1
         versionName "1.0"
     }
