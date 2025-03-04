@@ -1,11 +1,13 @@
 apply plugin: 'com.android.library'
+apply plugin: 'maven-publish'
 
 android {
-    compileSdkVersion 27
+    namespace "net.opacapp.multilinecollapsingtoolbar"
+    compileSdkVersion 34
 
     defaultConfig {
         minSdkVersion 14
-        targetSdkVersion 27
+        targetSdkVersion 34
         versionCode 11
         versionName "27.1.1"
     }
@@ -16,6 +18,10 @@ android {
     }
     lintOptions {
         abortOnError false
+    }
+
+    publishing {
+        singleVariant("release") // Ensures "release" component exists
     }
 }
 
@@ -45,10 +51,24 @@ ext {
 }
 
 dependencies {
-    compile 'com.android.support:design:27.1.1'
-    compile 'com.android.support:support-v4:27.1.1'
-    compile 'com.android.support:appcompat-v7:27.1.1'
+    implementation 'com.android.support:design:27.1.1'
+    implementation 'com.android.support:support-v4:27.1.1'
+    implementation 'com.android.support:appcompat-v7:27.1.1'
+}
+
+publishing {
+    publications {
+        release(MavenPublication) {
+            groupId = 'net.opacapp'
+            artifactId = 'multiline-collapsingtoolbar'
+            version = '27.1.1'
+
+            afterEvaluate {
+                from components.release
+            }
+        }
+    }
 }
 
 
-apply from: '../bintray.gradle'
+//apply from: '../bintray.gradle'

@@ -1,6 +1,7 @@
 apply plugin: 'com.android.application'
 
 android {
+    namespace "net.opacapp.multilinecollapsingtoolbar.demo"
     compileSdkVersion 27
 
     defaultConfig {
@@ -13,7 +14,7 @@ android {
 }
 
 dependencies {
-    compile 'com.android.support:appcompat-v7:27.1.1'
-    compile 'com.android.support:design:27.1.1'
-    compile project(':multiline-collapsingtoolbar')
+    implementation 'com.android.support:appcompat-v7:27.1.1'
+    implementation 'com.android.support:design:27.1.1'
+    implementation project(':multiline-collapsingtoolbar')
 }
