@@ -1,3 +1,43 @@
+# multiline-collapsingtoolbar
+Updated + cloned version of multiline-collapsingtoolbar since a legacy project required it but original was no longer available.
+
+## gradle
+Step 1. Add it in your root settings.gradle at the end of repositories:
+``` groovy
+	dependencyResolutionManagement {
+		repositories {
+			mavenCentral()
+			maven { url 'https://jitpack.io' }
+		}
+	}
+```
+Step 2. Add the dependency
+```groovy
+	dependencies {
+	        implementation 'com.github.jhavatar:multiline-collapsingtoolbar:27.1.3'
+	}
+```
+
+### gradle.kts
+
+Step 1. Add it in your settings.gradle.kts at the end of repositories:
+``` kotlin
+	dependencyResolutionManagement {
+		repositories {
+			mavenCentral()
+			maven { url = uri("https://jitpack.io") }
+		}
+	}
+```
+Step 2. Add the dependency
+``` kotlin
+	dependencies {
+	        implementation("com.github.jhavatar:multiline-collapsingtoolbar:27.1.3")
+	}
+```
+
+Original README.md from here on:
+
 # multiline-collapsingtoolbar [ ![Download](https://api.bintray.com/packages/opacapp/libs/multiline-collapsingtoolbar/images/download.svg) ](https://bintray.com/opacapp/libs/multiline-collapsingtoolbar/_latestVersion)
 _multiline-collapsingtoolbar_ is a replacement for `CollapsingToolbarLayout` from the [Android
 Design Support Library](https://github.com/android/platform_frameworks_support/tree/master/design)
