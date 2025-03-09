@@ -1,5 +1,5 @@
 # multiline-collapsingtoolbar
-Updated + cloned version of [multiline-collapsingtoolbar](https://github.com/opacapp/multiline-collapsingtoolbar)  since a legacy project required it but original was no longer available.
+Updated cloned version of [multiline-collapsingtoolbar](https://github.com/opacapp/multiline-collapsingtoolbar)  since a legacy project required it but original was no longer available.
 
 ## gradle
 Step 1. Add it in your root settings.gradle at the end of repositories:
